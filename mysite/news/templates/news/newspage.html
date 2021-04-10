@@ -1,0 +1,69 @@
+
+{% extends 'home/basic.html'%}
+{% block news_body %}
+
+
+<!--<div class="card-deck">-->
+<div class ="container-fluid cont1 mt-5">
+    <div class="row justify-content-center">
+
+        <div class="col-6">
+
+      {% for data in News %}
+        <div class="card">
+            <div class="container-fluid">
+                <div class ="row">
+                    <div class="col-8">
+                        <div class="card-body">
+                            <h5 class="card-title"> {{data.headline}}</h5>
+                            <p class="card-text">{{data.content}}</p>
+                           </div>
+                        </div>
+                           <div class="col-4">
+                                    <img class="card-img-top" src="/media/{{data.image}}" alt="Card image cap">
+                           </div>
+
+
+
+                </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card-footer"style="text-align: center;">
+
+
+
+
+                              <a href="/news/detail/{{data.news_id}}" >See more </a>
+
+
+
+
+
+                                <small class="text-muted" >Last Update: {{data.pub_date}}</small>
+                              </div>
+                        </div>
+                    </div>
+
+        </div>
+     </div>
+
+    {% endfor %}
+
+
+
+
+
+
+          </div>
+      </div>
+ </div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

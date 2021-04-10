@@ -1,0 +1,65 @@
+{% extends 'home/basic.html'%}
+  {% block event_body%}
+  <section>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-12">
+
+            <div class="container ">
+
+                {% for event in allEvents %}
+
+                <div class="row ">
+                  {% for i in event %}
+
+        <!-- Header to event tab section -->
+
+          <div class="container pt-1 pb-3">
+          <h1 style="font-family: 'Carter One', cursive; letter-spacing:0.25rem;">{{i.0.Event_type}}</h1>
+          </div>
+      <!-- Header to event tab section ends -->
+
+
+        {% for x in i %}
+
+
+          <div class="col-lg-3 col-md-4  col-sm-6 col-6 pt-2 pb-2">
+
+            <div class="card card_cont"  onclick="location.href='/event/detail/{{x.Event_id}}';" style="width: 14rem; cursor: pointer;">
+              <img class="card-img-top" src='/media/{{x.image}}' alt="Card image cap">
+              <div class="card-body">
+                <h5>{{x.Event_name}}</h5>
+
+
+                  <div class="row justify-content-center align-items-cente" style="background:#b80000;">
+                    <div class="col-6 pb-3 pt-3 font-weight-bolder">
+                      <a href="/event/detail/{{x.Event_id}}"> Join Now</a>
+                    </div>
+
+                  </div>
+            </div>
+          </div>
+
+    </div>
+
+
+
+
+
+
+  {% endfor %}
+
+
+  {% endfor %}
+
+
+
+  </div>
+  {% endfor %}
+
+    </div>
+    </div>
+    </div>
+    </div>
+      </section>
+  {% endblock%}
