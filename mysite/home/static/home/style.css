@@ -3,8 +3,7 @@
 }
 
 .nav-item:hover{
-  background-color: red;
-  border-radius: 1px;
+  font-size: 1.1rem;
 }
 .navbar-nav{
   letter-spacing: 0.3rem;
@@ -13,10 +12,7 @@
 .navbar-light .navbar-nav .nav-link {
     color: white;
 }
-#alink:hover{
-  text-decoration: none;
 
-}
 .card_cont:hover{
   border: 1px solid;
   box-shadow: 5px 10px #888888;
@@ -28,42 +24,8 @@
    border-radius: 0px;
   padding: 0px;
 }
-.sidebar{
-  height: 580px;
-  background: #141414;
-  width: 340px;
-  position: fixed;
-  display: none;
-}
 
-.footer_bg{
-  background-image: url("https://images.unsplash.com/photo-1608501773255-d8cd9e5ba968?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
 
-}
-.slider_back{
-  background-image: url("https://images.unsplash.com/photo-1556139930-c23fa4a4f934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
-  height:470px;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.8;
-}
-.slider{
-  padding-top: 10px;
-
-}
-.carousel-item{
-  height: 28rem;
-}
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-}
-
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
 .top-list{
   list-style-type: none;
   margin-left: -60px
@@ -73,9 +35,32 @@ img:hover {
   padding-top: 8px;
   border: 1px gray solid;
 }
-.info-sec{
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+
+.carousel-control-next, .carousel-control-prev{
+
+  width:10%;
+}
+.carousel-item{
+  height:650px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 50%;
+    bottom: 25%;
+    top:25%;
+    left: 8%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: start;
+}
+
+.captions{
+  font-size: 4rem;
+}
+.captions2{
+  font-size: 2rem;
 }
 
 
@@ -128,7 +113,7 @@ img:hover {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
-  padding: 10px;
+
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
