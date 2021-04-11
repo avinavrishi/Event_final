@@ -42,18 +42,27 @@
   width:10%;
 }
 .carousel-item{
-  height:650px;
+  height:40rem;
 }
+
 .carousel-caption {
     position: absolute;
     right: 50%;
     bottom: 25%;
     top:25%;
-    left: 8%;
+    left: 10%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: start;
+    animation-name: caption_anima;
+    animation-duration: 2s;
+      
+}
+@keyframes caption_anima {
+  from {left:50%;right:10%;}
+  to {left:10%;right:50%;}
+
 }
 
 .captions{

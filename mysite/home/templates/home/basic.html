@@ -40,7 +40,7 @@
             <div class="container-fluid">
                 <div class="row">
                   <div class="col-12">
-                    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-transparent" style="background-color: #141414;">
+                    <nav class="navbar fixed-top navbar-expand-sm navbar-light"  id="navbar" style="background-color: #00000000;transition:background-color 0.5s;">
                       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list ms-2" id="hamburger" viewBox="0 0 16 16" onclick="openNav()">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                       </svg>
@@ -188,6 +188,17 @@
 
 
 
+
+          window.onscroll = function() {
+            scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop >= 600) {
+              document.getElementById("navbar").style.backgroundColor= "#141414";
+            } else {
+              document.getElementById("navbar").style.backgroundColor= "#00000000";
+            }
+          }
          </script>
 
           </body>
