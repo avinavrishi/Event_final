@@ -27,4 +27,8 @@ demonstrate his/her talent and an interface where the talents can meet at one pl
       $ python manage.py runserver   
 
 
+<<<<<<< HEAD
       new chang
+=======
+      new changes1
+>>>>>>> 4a9ffa8cd21d62eb4558f3643da9e5a724fb604e
