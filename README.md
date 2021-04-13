@@ -25,3 +25,5 @@ demonstrate his/her talent and an interface where the talents can meet at one pl
 5. Run server
 
       $ python manage.py runserver   
+
+hello
