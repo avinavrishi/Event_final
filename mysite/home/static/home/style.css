@@ -3,19 +3,24 @@
 }
 
 .nav-item:hover{
-  font-size: 1.1rem;
+  transform: scaleY(1.2) scaleX(1.2);
+
+
 }
 .navbar-nav{
   letter-spacing: 0.3rem;
   font-weight: bold;
 }
-.navbar-light .navbar-nav .nav-link {
+.nav-link {
     color: white;
+}
+.nav-link:hover {
+  color:white;
 }
 
 .card_cont:hover{
-  border: 1px solid;
-  box-shadow: 5px 10px #888888;
+  border : 1px solid #888888;
+  box-shadow: 8px 8px #888888;
   width: 20rem;
   transition: transform 0.3s;
   transform: scaleY(1.1) scaleX(1.1);
@@ -28,15 +33,7 @@
 }
 
 
-.top-list{
-  list-style-type: none;
-  margin-left: -60px
-}
-.top-list li{
-  padding-bottom: 8px;
-  padding-top: 8px;
-  border: 1px gray solid;
-}
+
 
 
 .carousel-control-next, .carousel-control-prev{
@@ -51,7 +48,7 @@
     position: absolute;
     right: 50%;
     bottom: 25%;
-    top:25%;
+    top:35%;
     left: 10%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -134,4 +131,31 @@
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.btn-danger{
+  background: linear-gradient(to left, #000000 -3%, #ff0000 100%);
+}
+.btn-danger:hover {
+
+  animation-name: button_anime;
+  animation-duration: 1s;
+  
+
+
+}
+@keyframes button_anime {
+  0% {background: linear-gradient(to right, #000000 -3%, #ff0000 100%);}
+  10% {background: linear-gradient(to right, #000000 10%, #ff0000 100%);}
+  20% {background: linear-gradient(to right, #000000 20%, #ff0000 100%);}
+
+  30% {background: linear-gradient(to right, #000000 30%, #ff0000 100%);}
+  40% {background: linear-gradient(to right, #000000 40%, #ff0000 100%);}
+  50  {background: linear-gradient(to right, #000000 50%, #ff0000 100%);}
+  60% {background: linear-gradient(to right, #000000 60%, #ff0000 100%);}
+  70% {background: linear-gradient(to right, #000000 70%, #ff0000 100%);}
+  80% {background: linear-gradient(to left, #000000 30%, #ff0000 100%);}
+  90% {background: linear-gradient(to left, #000000 20%, #ff0000 100%);}
+  100 {background: linear-gradient(to left, #000000 -3%, #ff0000 100%);}
+
 }
