@@ -155,11 +155,7 @@
 
          // Latest update toogle function
 
-         $(document).ready(function(){
-           $(".u_row").click(function(){
-             $(".update_row").toggle(5000);
-           });
-         });
+
 
 
 
@@ -190,18 +186,26 @@
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 
 
-
+          var url = "http://127.0.0.1:8000/";
+          if (window.location.href == url) {
 
           window.onscroll = function() {
-            scrollFunction()};
+
+            scrollFunction() };
+        }
+          else {
+          document.getElementById("navbar").style.backgroundColor= "#141414";
+          }
 
           function scrollFunction() {
-            if (document.body.scrollTop > 0 || document.documentElement.scrollTop >= 600) {
+            if (document.body.scrollTop > 0 || document.documentElement.scrollTop >= 600 ) {
               document.getElementById("navbar").style.backgroundColor= "#141414";
             } else {
               document.getElementById("navbar").style.backgroundColor= "#00000000";
             }
           }
+
+          
          </script>
 
           </body>
