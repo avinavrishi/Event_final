@@ -1,3 +1,7 @@
+body{
+    background-color:#242424;
+    color:white;
+}
 .navbar-brand{
   letter-spacing: 0.2rem;
 }
@@ -6,6 +10,12 @@
   transform: scaleY(1.2) scaleX(1.2);
 
 
+}
+.footer_img{
+  width : 100%;
+  height : 400px;
+  background-image: url('https://images.unsplash.com/photo-1583906326446-7b35b961fef0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+  background-size: 100%;
 }
 .navbar-nav{
   letter-spacing: 0.3rem;
@@ -20,7 +30,7 @@
 
 .card_cont:hover{
   border : 1px solid #888888;
-  box-shadow: 8px 8px #888888;
+  box-shadow: 8px 8px #000000;
   width: 20rem;
   transition: transform 0.3s;
   transform: scaleY(1.1) scaleX(1.1);
@@ -140,7 +150,7 @@
 
   animation-name: button_anime;
   animation-duration: 1s;
-  
+
 
 
 }

@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
 
 
+
     <link rel="stylesheet" type="text/css" href="{% static 'home/css/style.css' %}">
     <title></title>
   </head>
@@ -43,9 +44,7 @@
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
           <div id="main">
-            <div class="container-fluid">
-                <div class="row">
-                  <div class="col-12">
+
                     <nav class="navbar fixed-top navbar-expand-sm"  id="navbar" style="background-color: #00000000;transition:background-color 0.5s;">
                       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list ms-2" id="hamburger" viewBox="0 0 16 16" onclick="openNav()">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -86,20 +85,23 @@
 
                     </nav>
 
-                  </div>
 
-                </div>
-            </div>
 
 
             {% block home_body%}
             {% endblock %}
 
-
+            <!-- Eventpage body section start -->
                       {% block event_body%}
                       {% endblock %}
 
                       <!-- Eventpage body section ends -->
+
+                      <!-- Event detail body section -->
+                      {% block event_detail %}
+                      {% endblock %}
+
+                      <!-- Event detail body section ends -->
 
                       <!-- Newspage body section -->
 
@@ -123,23 +125,25 @@
                       <!-- Contactpage body section ends -->
 
 
-                      <!-- Event detail body section -->
 
-                      <!-- Event detail body section ends -->
 
                       {% block News_detail %}
                       {% endblock %}
 
             </div>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 footer_img">
 
 
-          <!-- Header section end -->
+                </div>
 
-          <!-- Homepage body section -->
+              </div>
 
-          <!-- Homepage body section ends -->
+            </div>
 
-          <!-- Eventpage body section -->
+
+
 
 
 
@@ -199,9 +203,9 @@
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 
+  /* Navbar scroll function */
 
-          var url = "http://127.0.0.1:8006/";
-          if (window.location.href == url) {
+          if (document.getElementById("carouselExampleFade") != null) {
 
           window.onscroll = function() {
 
