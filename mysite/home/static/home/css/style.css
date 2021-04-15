@@ -2,6 +2,9 @@ body{
     background-color:#242424;
     color:white;
 }
+.form ul{
+display: none;
+}
 .navbar-brand{
   letter-spacing: 0.2rem;
 }

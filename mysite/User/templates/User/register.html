@@ -1,0 +1,21 @@
+{% extends 'home/basic.html' %}
+
+{% block register %}
+
+<div class="container mt-5">
+  <div class="row justify-content-center mt-5">
+    <div class="col-6 mt-5">
+      <form method="post" class="form">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button class="btn" type="submit" style="background-color:yellow; color:blue">
+            Register
+        </button>
+      </form>
+
+      If you already have an account, <a href="/login">login here</a> instead.
+  </div>
+
+</div>
+
+{% endblock %}
