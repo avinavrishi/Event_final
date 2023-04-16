@@ -1,7 +1,7 @@
-# Event Project
+# Kalakarist Event Project
 
 
-ProjectX is an interactive web based application or platform where one can
+Kalakarist is an interactive web based application or platform where one can
 demonstrate his/her talent and an interface where the talents can meet at one place in order to Book Event of near by areas. It is an online platform where the people of similar interests can compete as well as grow as an individual or group by showing the best of their talents.
 
 
